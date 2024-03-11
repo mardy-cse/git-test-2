@@ -10,8 +10,12 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.indigo,
       ),
-      body: Center(
-        child: Text('This is change of main branch'),
+      body: Container(
+        child: Column(
+          children: [
+            Text('This is dev/liton branch')
+          ],
+        ),
       )
     );
   }
