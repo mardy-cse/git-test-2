@@ -8,8 +8,8 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Git & Github', style: TextStyle(color: Colors.white),),
         centerTitle: true,
+        backgroundColor: Colors.indigo,
       ),
-      backgroundColor: Colors.indigo,
     );
   }
 }
