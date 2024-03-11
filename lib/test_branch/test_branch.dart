@@ -10,6 +10,9 @@ class TestBranch extends StatelessWidget {
         backgroundColor: Colors.indigo,
         title: Text('Test Branch', style: TextStyle(color: Colors.white),),
       ),
+      body: Center(
+        child: Text('This is Test Branch'),
+      )
     );
   }
 }

@@ -22,8 +22,6 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-
-
                 ElevatedButton(onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>LitonDev()));
                 }, child: Text('Dev / Liton')),
@@ -31,8 +29,6 @@ class HomeScreen extends StatelessWidget {
                 ElevatedButton(onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>TestBranch()));
                 }, child: Text('Test Branch')),
-
-
               ],
             )
           ],
