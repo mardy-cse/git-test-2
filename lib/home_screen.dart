@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 ElevatedButton(onPressed: (){}, child: Text('Test Branch')),
-                ElevatedButton(onPressed: (){}, child: Text('Liton Branch')),
+                ElevatedButton(onPressed: (){}, child: Text('Dev / Liton')),
               ],
             )
           ],
