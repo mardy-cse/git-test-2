@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:git2/test_branch/test_branch.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -19,7 +20,9 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                ElevatedButton(onPressed: (){}, child: Text('Test Branch')),
+                ElevatedButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>TestBranch()));
+                }, child: Text('Test Branch')),
                 ElevatedButton(onPressed: (){}, child: Text('Dev / Liton')),
               ],
             )
