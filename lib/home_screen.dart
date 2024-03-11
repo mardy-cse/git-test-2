@@ -11,7 +11,20 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.indigo,
       ),
       body: Center(
-        child: Text('This is change of main branch'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('This is change of main branch'),
+            SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(onPressed: (){}, child: Text('Test Branch')),
+                ElevatedButton(onPressed: (){}, child: Text('Liton Branch')),
+              ],
+            )
+          ],
+        ),
       )
     );
   }
