@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:git2/liton_branch/liton_dev.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -20,7 +21,9 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 ElevatedButton(onPressed: (){}, child: Text('Test Branch')),
-                ElevatedButton(onPressed: (){}, child: Text('Dev / Liton')),
+                ElevatedButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LitonDev()));
+                }, child: Text('Dev / Liton')),
               ],
             )
           ],
